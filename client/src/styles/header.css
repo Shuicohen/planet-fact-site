@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--color-gray);
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  
+  .nav {
+    display: none; /* Hide navigation by default on mobile */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--color-bg);
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .nav.open {
+    display: flex; /* Show navigation when the menu is open */
+  }
+  
+  .nav a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--color-light-gray);
+    text-decoration: none;
+  }
+  
+  .nav a.active {
+    color: var(--color-white);
+    border-bottom: 2px solid var(--color-blue);
+  }
+  
+  .nav a:hover {
+    color: var(--color-white);
+  }
+  
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-light-gray);
+  }
+  
+  /* Show navigation in a row on larger screens */
+  @media (min-width: 768px) {
+    .nav {
+      display: flex;
+      position: static;
+      width: auto;
+      box-shadow: none;
+      flex-direction: row;
+      padding: 0;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+  

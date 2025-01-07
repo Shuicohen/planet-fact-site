@@ -1,0 +1,107 @@
+/* planet.css */
+.planet-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+  }
+  
+  .planet-image {
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .planet-image img {
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .planet-content {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .planet-content h2 {
+    font-size: 2.5rem;
+    color: var(--color-white);
+  }
+  
+  .planet-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-light-gray);
+  }
+  
+  .planet-content a {
+    font-size: 0.9rem;
+    color: var(--color-blue);
+    text-decoration: none;
+  }
+  
+  .planet-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .tabs {
+    margin-top: 1rem;
+  }
+  
+  .stats {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .stat {
+    background-color: var(--color-gray);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+  
+  .stat h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-white);
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .planet-page {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      padding: 1rem;
+    }
+  
+    .planet-image {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  
+    .planet-content {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      text-align: center;
+    }
+  
+    .stats {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  }
+  

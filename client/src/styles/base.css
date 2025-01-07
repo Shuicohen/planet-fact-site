@@ -1,0 +1,51 @@
+:root {
+    --color-bg: #070724;
+    --color-white: #ffffff;
+    --color-gray: #38384f;
+    --color-light-gray: #838391;
+    --color-blue: #419ebb;
+    --color-purple: #6f2ed6;
+    --color-orange: #eda249;
+    --color-red: #d14c32;
+    --color-dark-red: #cd5120;
+    --color-green: #1ec2a4;
+    --color-dark-blue: #2d68f0;
+  
+    --font-family: 'Spartan', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg);
+    background-image: url('/public/assets/background-stars.svg'); /* Adjust path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--color-white);
+  }
+  
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  a {
+    color: var(--color-blue);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
