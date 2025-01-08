@@ -7,7 +7,7 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<div>Home Page</div>} />
+        <Route path="/" element={<PlanetPage />} />
         <Route path="/planet/:name" element={<PlanetPage />} />
       </Routes>
 
