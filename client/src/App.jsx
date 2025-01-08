@@ -7,6 +7,7 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
+        <Route path="/" element={<Navigate to="/planet/earth" replace />} />
         <Route path="/planet/:name" element={<PlanetPage />} />
       </Routes>
 
